@@ -1,0 +1,129 @@
+.popular{
+    .popular__cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .popular__card{
+            .card__img{
+                display: flex;
+                img{
+                    display: block;
+                    margin: 26px auto;
+                }
+                .card__icon{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap:    5px;
+                    margin-top: 15px;
+                    position: relative;
+                    left: -27px;
+                    svg{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .card__info{
+                h2{
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-align: center;
+                }
+                p{
+                    margin-top: px;
+                    text-align: center;
+                    color:#75758A;
+                    font-weight: 400;
+                }
+                .card__info__cards{
+                    width: 100%;
+                    border: 1px solid #EFEFEF;
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    .card{
+                        padding:15px 9px;
+                        &:not(:first-child){
+                            border-left: 1px solid #EFEFEF;
+                        }
+                    }
+                }
+                .card__bottom{
+                    margin-top: 33px;
+                    margin-bottom: 21px;
+                    .bottom{
+                        justify-content: center;
+                        display: flex;
+                        column-gap: 20px;
+                        .bottom1{
+                            padding: 12px 25px;
+                            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+                            border-radius: 100px;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-align: center;
+                            cursor: pointer;
+                            &:hover{
+                                transition: 0.2s;
+                                background: #4F9C2C;
+                            }
+                        }
+                        .bottom2{
+                            background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+                            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+                            border-radius: 100px;
+                            color: white;
+                            padding: 12px 25px;
+                            border-radius: 100px;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-align: center;
+                            cursor: pointer;
+                            display: flex;
+                            column-gap: 9px;
+                            &:hover{
+                               background: #75758A;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .popular__info{
+        margin: 93px auto;
+        max-width: 570px;
+        justify-content: center;
+        .info__content{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 26px;
+            text-align: center;
+            color: #75758A;
+            span{
+                color: black;
+            }
+        }
+        .card__button{
+            display: flex;
+            column-gap: 20px;
+            justify-content: center;
+            margin-top: 17px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1124px){
+    .popular{
+        display: block;
+        width: 80%;
+        .popular__cards{
+            margin: 0 auto;
+            display: block;
+            max-width: max-content;
+            row-gap: 40px;
+        }
+    }
+}

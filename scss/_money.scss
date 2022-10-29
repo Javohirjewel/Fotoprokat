@@ -1,0 +1,60 @@
+.money{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  #F5F5F5;
+    padding: 96px;
+    margin-top: 100px;
+    p{
+        max-width: 470px;
+        margin: 0 auto;
+    }
+    .money__cards{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 37px;
+        gap: 30px;
+
+        .card{
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+            // max-width: 370px;
+            padding: 25px 30px 30px;
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+    
+            p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+                margin-bottom: 32px;
+            }
+            .card__svg{
+                margin-left: auto;
+            }
+        }
+    }
+    .money__bottom{
+        max-width: max-content;
+        margin: 40px auto;
+    }
+}
+@media only screen and (max-width: 1195px){
+    .money{
+        background: white;
+        row-gap: 40px;       
+        .money__cards{
+           margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 30px;
+            .card{
+                margin: 0 auto;
+                width: 250px;
+                background-color:  #F5F5F5;
+            }
+
+        }
+    }
+}

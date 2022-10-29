@@ -1,0 +1,53 @@
+.price{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    .price__card{
+        display: flex;
+        align-items: flex-end;
+        height: 350px;
+        width: 350px;
+
+        &:nth-of-type(1){
+            background: url('../img/photo1.jpg');
+        }
+        &:nth-of-type(2){
+            background: url('../img/photo2.jpg');
+        }
+        &:nth-of-type(3){
+            background: url('../img/photo3.jpg');
+        }
+        &:nth-of-type(4){
+            width: 730px;
+            background: url('../img/photo4.jpg');
+        }
+        &:nth-of-type(5){
+            background: url('../img/photo5.jpg');
+        }
+        .price__info{
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1124px){
+    .price{
+        width: 100%;
+        row-gap:40px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 40px;
+        // width: 80%;
+        .price__card{
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            &:nth-of-type(4){
+                display: none;
+            }
+
+        }
+    }
+}

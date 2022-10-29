@@ -1,0 +1,230 @@
+.footer{
+    width: 100%;
+    .footer__mask{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url(../img/Mask\ Group.jpg);
+        padding: 16px 0px;
+        justify-content: space-between;
+        .container{
+            display: flex;
+            gap: 85px;
+            .card{
+                width: 210px;
+                display: flex;
+                font-weight: 700;
+                font-size: 16px;
+                color: #8EE901;
+                p{
+                    padding-left: 10px;
+                    span{
+                        color: white;
+                    }
+                }
+            }
+            .input{
+                input[type=text] {
+                    width: 315px;
+                    padding: 12px 20px;
+                }
+            }
+            .zvonok{
+                
+                cursor: pointer;
+                margin: 10px auto;
+                width: 210px;
+                display: flex;
+                span{
+                    cursor: pointer;
+                    color: #8EE901;
+                    align-items: center;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .container{
+        .footer__info{
+            padding: 31px 0px 35px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .card{
+                height: 114px;
+                max-width: 255px;
+                font-weight: 400;
+                line-height: 20px;
+                .navbar__logo{
+                    margin-bottom: 9px;
+                }
+                p{
+                    font-size: 14px;
+                    color: #000000;
+                    margin-bottom: 19px;
+                }
+                span{
+                    font-size: 12px;
+                    color: #75758A;
+                }
+                .icon{
+                    svg{
+                        margin: 5px;
+                    }
+                }
+                h6{
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #75758A;
+                    margin-top: 43px;
+                }
+            }
+            .card3{
+                max-width: 255px;
+                h1{
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+                p{
+                    margin-top: 4px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .card4{
+                
+              display: flex;  
+              height: 100%;
+              align-items: center;
+              svg{
+                margin: 5px;
+              }
+            }
+            .card5{
+                display: flex;
+                height: max-content ;
+                column-gap: 21px;
+                .info1{
+                    align-items: center;
+                    color: blue;
+                    display: flex;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    background: #276EB8;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    p{
+                        background: #D61E2F;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1124px) and (min-width:890px){
+    .footer{
+        .footer__mask{
+            // width: 100%;
+            // border: 70px solid black;
+            .container{
+                margin:  0 auto;
+                display: block;
+                .card{
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .input{margin-left: 70px;
+                    display: flex;
+                    justify-content: center;
+                }
+                .zvonok{
+                    margin-top: 10px;
+                    span{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            .footer__info{
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 20px;
+            }
+        }
+        
+    }
+    
+}
+@media only screen and (max-width: 890px) {
+    .footer{
+        .footer__mask{
+            .container{
+                display: block;
+                .card{
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .input{
+                    display: flex;
+                    justify-content: center;
+                }
+                .zvonok{
+                    display: none;
+                }
+                }
+         }
+        .container{
+            display: none;
+        }
+    }
+
+}
+@media only screen and (max-width: 486px){
+    .footer{
+        .footer__mask{
+            display: none;
+            .container{
+                display: block;
+                .card{
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .input{
+                    margin-left: 60px;
+                    display: block;
+                    input{
+                        margin-bottom: 10px;
+                        margin-left: auto;
+                        width: 100px;
+                    }
+                    label{
+                        margin-left: 80px;
+                    }
+                }
+                .zvonok{
+                    display: none;
+                }
+                }
+         }
+        .container{
+            display: none;
+        }
+    }
+
+}

@@ -1,0 +1,83 @@
+.position__info{
+    display: flex;
+    padding-top: 47px;
+    border-top: 1px solid#EFEFEF;
+    column-gap: 50px;
+    .info__banner{
+        width: max-content;
+        .info__banner__card{
+            width: max-content;
+            border: 1px solid#EFEFEF;
+            display: flex;
+            padding: 22px;
+           .card__icon{
+                margin: -22px;
+                width: 55px;
+                display: flex;  
+                flex-wrap: wrap;
+                height: max-content;
+                svg{
+                    padding: 10px;
+                    width: 55px;
+                    height: 55px;
+                    border: 1px solid #EFEFEF;
+
+                }
+                
+           } 
+           .card__img{
+            padding-top: 104px;
+            padding-left: 67px;
+            .icons{
+                cursor: pointer;
+                margin-top: 45px;
+                display: flex;
+                column-gap: 10px;
+                margin-left: 25px;
+                svg{
+                    text-align: center;
+                }
+            }
+           }
+           .card__icon2{
+                padding-left: 48px;
+                svg{
+                    display: flex;
+                    gap: 17px;
+                }
+           }
+        }
+        .info__banner_content{
+            margin-top: 43px;
+            max-width: 440px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 23px;
+            row-gap: 18px;
+            cursor: pointer;
+            p{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+            }
+            span{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+
+                color: #75758A;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1153px){
+    .position__info{
+        display: block;
+        .info__banner{
+            margin: 0 auto;
+        }
+        .info__content{
+            margin-top: 100px;
+        }
+        }
+    }
